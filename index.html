@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Portfolio Nolan HOARAU</title>
+</head>
+<body>
+    <div id="scroll-progress" aria-hidden="true"></div>
+    <!-- Subtle background ornaments for depth -->
+    <div class="bg-ornaments" aria-hidden="true">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
+    </div>
+
+    <!-- Nav Bar -->
+    <nav class="navbar">
+      <div class="navbar-inner">
+        <div class="cv-dropdown" id="cv-dropdown">
+          <button class="cv-btn" id="cv-toggle" aria-haspopup="true" aria-expanded="false">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+            CV
+          </button>
+          <div class="cv-menu" id="cv-menu" role="menu">
+            <a href="cv/CV_Nolan_HOARAU_FR.pdf" download class="cv-menu-item" role="menuitem">
+              <span class="cv-flag">🇫🇷</span>
+              <span>CV Français</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </a>
+            <a href="cv/CV_Nolan_HOARAU_EN.pdf" download class="cv-menu-item" role="menuitem">
+              <span class="cv-flag">🇬🇧</span>
+              <span>CV English</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+        <ul>
+            <li><a href="#presentation">Présentation</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#parcours">Parcours</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <div class="dot"></div>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Présentation -->
+    <section id="presentation" class="reveal">
+        <div class="container">        
+            <div class="titre">
+                <h1 class="whoami">$ whoami</h1>
+                <h2>> Nolan HOARAU</h2>
+
+                <h3 class="subtitle">
+                    <span class="typed" data-words="Étudiant en BUT Réseau et Télécommunications"></span>
+                    <span class="curseur">|</span>
+                </h3>
+            </div>
+
+            <div class="pdp" data-parallax>
+                <img src="images/Nolan_HOARAU.jpg" alt="Nolan HOARAU">
+            </div>
+        </div>
+    </section>
+
+    <!-- Descriptions -->
+    <section id="apropos" class="reveal">
+        <div class="container">
+            <h2>À propos de moi</h2>
+            <div class ="apropos">
+                <nav class="apropos-nav">
+                    <ul>
+                        <li><a data-nw-id-target="apropos_presentation" class="js_affiche">Qui suis-je ?</a></li>
+                        <li><a data-nw-id-target="apropos_competences" class="js_affiche">Compétences générales</a></li>
+                        <li><a data-nw-id-target="apropos_passions" class="js_affiche">Passions</a></li>
+                    </ul>
+                </nav>
+
+                <div id="apropos_presentation" class="apropos_content">
+                    <p>
+                        Je m'appelle Nolan HOARAU, j'ai obtenu un bac STI2D et je poursuis actuellement mes études en BUT Réseau et Télécommunications à l'IUT de Colmar. Passionné par l'informatique, je souhaite me spécialiser dans le développement web et approfondir mes compétences dans ce domaine pour peut-être devenir ingénieur DevOps.
+                    </p>
+                </div>
+
+                <div id="apropos_competences" class="apropos_content">
+                    <p>
+                        Je suis sportif. Je suis quelqu'un de plutôt empathique et j'aime aider les autres car j'éprouve de la satisfaction. Parfois, lorsque j'aide les autres, comme dans ma formation actuelle, cela me permet également de pratiquer davantage et donc d'apprendre et de retenir plus facilement. Je ne suis pas quelqu'un qui aime se vanter, si ce n'est pour rigoler. Je suis ouvert d'esprit et ouvert aux autres, à leurs avis et à leurs opinions. J'aime le travail d'équipe, mais j'apprécie aussi beaucoup le travail autonome.
+                    </p>
+                </div>
+
+                <div id="apropos_passions" class="apropos_content">
+                    <p>
+                        En dehors de mes études, je suis passionné par le Volley-Ball, le sport en général. J'aime également apprendre de nouvelles choses en tout genre, que ce soit dans l'informatique ou la science par exemple.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétences -->
+    <section id="competences" class="reveal">
+        <div class="container">
+
+            <h2>Compétences</h2>
+
+            <div class="but_rt_ligne">
+                <img src="images/BUT_RT.png" alt="BUT Réseau et Télécommunications">
+                <h5>BUT Réseau et Télécommunications</h5>
+                <p>
+                    Administrer - Administer les réseaux et l'internet<br>
+                    Connecter - Connecter les entreprises et les usagers<br>
+                    Programmer - Créer des outils et applications informatiques pour les R&T
+                </p>
+            </div>
+
+            <div class="sous_but_rt">
+                <div class="OS">
+                    <img src="images/OS.png" alt="Systèmes d'exploitation" width="100">
+                    <h5>Systèmes d'exploitation</h5>
+                    <p>
+                        Je suis capable et d'installer et de configurer des systèmes d'exploitation tels que Linux et Windows. Je peux également administrer des serveurs sous Linux comme Apache/Nginx/FTP/DHCP.
+                    </p>
+                </div>
+
+                <div class="reseaux">
+                    <img src="images/reseau.png" alt="Réseaux" width="100">
+                    <h5>Administration Réseaux</h5>
+                    <p>
+                        Je suis capable de configurer des routeurs et des switchs Cisco, ainsi que de mettre en place des réseaux locaux ne utilisant des protocoles tels que TCP/IP, DHCP, DNS, HTTP/HTTPS, FTP, SSH, Telnet, spanning tree. Et certains protocoles de routages tels que RIP, OSPF.
+                        J'utilise certains outils tels que Packet Tracer GNS3 et EVE-NG pour simuler des réseaux.
+                    </p>
+                </div>
+
+                <div class="virt_containers">
+                    <img src="images/virt_cont.png" alt="Virtualisation et Contenerisation" width="100">
+                    <h5>Virtualisation et Conteneurisation</h5>
+                    <p>
+                        Je suis capable de créer des machines virtuelles et de les administrer avec des outils tels que VirtualBox, VMware, Virt-Manager et KVM. Je peux également utiliser Docker, LXC pour créer des conteneurs et les administrer.
+                    </p>
+                </div>
+                        
+
+                <div class="developpement">
+                    <img src="images/dev.png" alt="Développement" width="100">
+                    <h5>Développement</h5>
+                    <p>
+                        Je suis capable de développer des applications web en utilisant des langages tels que HTML, CSS, SQL, Python avec l'outil Django. Je peux également créer des scripts en C/Bash pour automatiser des tâches.
+                        J'utilise des outils tels que Visual Studio Code et Pycharm pour le développement.
+                    </p>
+                </div>
+
+                <div class="outils">
+                    <img src="images/tools.png" alt="Outils" width="100">
+                    <h5>Outils</h5>
+                    <p>
+                        Je suis capable d'utiliser des outils tels que Git pour gérer mes projets et également Obsidian.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Parcours -->
+    <section id="parcours" class="reveal">
+        <div class="container">
+            <h2>Parcours</h2>
+            <ul class="timeline">
+                <li>
+                    <div class="img_parcours">
+                        <img src="images/iut.jpg" alt="IUT de Colmar">
+                    </div>
+                    <div class="content_parcours" tabindex="0" role="button" aria-expanded="false">
+                        <h3>2024 - 2027</h3>
+                        <h4>BUT Réseau et Télécommunications</h4>
+                        <p class="timeline-summary">Études en BUT Réseaux et Télécommunications</p>
+                        <div class="timeline-extra">
+                            <p>Modules étudiés : architectures réseau, services Internet, sécurité, administration Linux et virtualisation. Projets pratiques sur configuration de switchs/routeurs et scripts d'automatisation.</p>
+                            <div class="timeline-actions">
+                              <a class="timeline-link" href="https://www.iutcolmar.uha.fr/index.php/formations/diplomes/bachelor-universitaire-de-technologie-b-u-t-bac-3/b-u-t-reseaux-et-telecommunications/" target="_blank" rel="noreferrer noopener">En savoir plus sur l'IUT de Colmar</a>
+                            </div>
+                        </div>
+                        <div class="timeline-note">Cliquez sur le bloc pour en savoir plus</div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="img_parcours">
+                        <img src="images/42.png" alt="École 42">
+                    </div>
+                    <div class="content_parcours" tabindex="0" role="button" aria-expanded="false">
+                        <h3>Été 2024</h3>
+                        <h4>Piscine École 42</h4>
+                        <p class="timeline-summary">Formation pendant la durée d'un mois à l'École 42 où j'ai appris les bases de la programmation et du travail en équipe en peer-to-peer.</p>
+                        <div class="timeline-extra">
+                            <p>Apprentissage intensif en C, algorithmes et logique, résolution de bugs par pair-programming, et pratique quotidienne du travail collaboratif sans cours magistraux.</p>
+                            <div class="timeline-actions">
+                              <a class="timeline-link" href="https://www.42.fr" target="_blank" rel="noreferrer noopener">En savoir plus sur l'école 42</a>
+                            </div>
+                        </div>
+                        <div class="timeline-note">Cliquez sur le bloc pour en savoir plus</div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="img_parcours">
+                        <img src="images/sti2d.jpg" alt="STI2D">
+                    </div>
+                    <div class="content_parcours" tabindex="0" role="button" aria-expanded="false">
+                        <h3>2021 - 2024</h3>
+                        <h4>Bac STI2D</h4>
+                        <p class="timeline-summary">Baccalauréat STI2D au lycée Blaise Pascal à Colmar</p>
+                        <div class="timeline-extra">
+                            <p>Spécialité Systèmes d'Information et Numérique, avec des projets en électronique, programmation, maquettes domotiques et analyse de systèmes techniques.</p>
+                            <div class="timeline-actions">
+                              <a class="timeline-link" href="https://www.onisep.fr/formation/apres-la-3-la-voie-generale-et-technologique/qu-est-ce-que-la-voie-generale-et-technologique/la-voie-technologique-en-premiere-et-en-terminale/le-bac-sti2d-sciences-et-technologies-de-l-industrie-et-du-developpement-durable" target="_blank" rel="noreferrer noopener">En savoir plus sur le bac STI2D</a>
+                            </div>
+                        </div>
+                        <div class="timeline-note">Cliquez sur le bloc pour en savoir plus</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- Projets -->
+    <section id="projets" class="reveal">
+        <div class="container">
+            <h2>Projets</h2>
+            <div class="projets">
+
+                <div class="projet_card" data-modal="modal-gns3">
+                    <img src="images/R2.01.png" alt="GNS3">
+                    <h5>Construire un réseau avec GNS3</h5>
+                    <p>
+                        Simulation de réseaux avec GNS3, création de topologies complexes et tests de configurations réseau en environnement virtuel.
+                    </p>
+                </div>
+
+                <div class="projet_card" data-modal="modal-acrylic_wifi">
+                    <img src="images/Acrylic.png" alt="acrylic_wifi">
+                    <h5>Découvrir un système de transmission</h5>
+                    <p>
+                        Analyse et découverte d'un système de transmission WiFi à l'aide de l'outil Acrylic Wifi pour mieux comprendre les protocoles sans fil.
+                    </p>
+                </div>
+
+                <div class="projet_card" data-modal="modal-traiter_donnees">
+                    <img src="images/Camembert.png" alt="traiter_donnees">
+                    <h5>Traiter des données</h5>
+                    <p>
+                        Développement d'une interface graphique pour analyser, trier et gérer des fichiers et répertoires de façon automatisée.
+                    </p>
+                </div>
+
+                <div class="projet_card" data-modal="modal-initier_reseaux_info">
+                    <img src="images/eve.png" alt="initier_reseaux_info">
+                    <h5>S'initier aux réseaux informatiques</h5>
+                    <p>
+                        Création d'un réseau local avec routeur, switch et serveur DHCP sur EVE-NG, configuration des adresses IP et découverte des bases réseau.
+                    </p>
+                </div>
+
+                <div class="projet_card" data-modal="modal-premier_portfolio">
+                    <img src="images/Page-web.png" alt="Premier_portfolio">
+                    <h5>Création de mon premier portfolio</h5>
+                    <p>
+                        Réalisation d'un portfolio personnel en HTML/CSS pour présenter mes compétences et projets de manière professionnelle.
+                    </p>
+                </div>
+
+               <div class="projet_card" data-modal="modal-prise">
+                    <img src="images/Schema_electrique.png" alt="PRISE">
+                    <h5>Création d'une Prise connectée</h5>
+                    <p>
+                        Construction de A à Z une prise intelligente permettant le pilotage à distance sur une application mobile et un site web.
+                    </p>
+                </div>
+
+                <div class="projet_card" data-modal="modal-oinion">
+                    <img src="images/Onion.png" alt="OINION">
+                    <h5>Systeme de messagerie avec routage en oignon</h5>
+                    <p>
+                      Creation d'un système de messagerie sécurisé utilisant le routage en oignon pour garantir l'anonymat et la confidentialité des communications.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="modal-gns3">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="images/R2.01.png" alt="GNS3" class="modal-projet-img">
+            <h3>Construire un réseau avec GNS3</h3>
+            <p>
+                Voici les compétences acquises : <br><br>
+                Administrer et notamment les apprentissages critiques <br>
+                Configurer les fonctions de base du réseau local <br>
+                Identifier les dysfonctionnements du réseau local et savoir les signaler
+            </p>
+            <a href="https://github.com/NolanHoarau/R-2.01" target="_blank" class="github-btn">
+            <img src="images/github.png" alt="GitHub" style="width:24px;vertical-align:middle;"> Voir sur GitHub
+            </a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-acrylic_wifi">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="images/Acrylic.png" alt="Acrylic Wifi" class="modal-projet-img">
+            <h3>Découvrir un système de transmission</h3>
+            <p>
+                Voici les compétences acquises : <br><br>
+                Connecter et notamment les apprentissages critiques<br>
+                Mesurer, analyser et commenter les signaux<br>
+                Déployer des supports de transmission<br>
+                Communiquer avec un tiers (client, collaborateur...) et adapter son discours et sa langue à son interlocuteur
+            </p>
+            <a href="https://github.com/NolanHoarau/Acrylic" target="_blank" class="github-btn">
+            <img src="images/github.png" alt="GitHub" style="width:24px;vertical-align:middle;"> Voir sur GitHub
+            </a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-traiter_donnees">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="images/Camembert.png" alt="Traiter des données" class="modal-projet-img">
+            <h3>Traiter des données</h3>
+            <p>
+                Voici les compétences acquises : <br><br>
+                Programmer et notamment les apprentissages critiques<br>
+                Lire, exécuter, corriger et modifier un programme<br>
+                S'intégrer dans un environnement propice au développement et au travail collaboratif.
+            </p>
+            <a href="https://github.com/NolanHoarau/traiter-donnees" target="_blank" class="github-btn">
+            <img src="images/github.png" alt="GitHub" style="width:24px;vertical-align:middle;"> Voir sur GitHub
+            </a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-initier_reseaux_info">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="images/eve.png" alt="Initier aux réseaux informatiques" class="modal-projet-img">
+            <h3>S'initier aux réseaux informatiques</h3>
+            <p>
+                Voici les compétences acquises : <br><br>
+                Administrer et notamment les apprentissages critiques <br>
+                Configurer les fonctions de base du réseau local <br>
+                Identifier les dysfonctionnements du réseau local et savoir les signaler
+            </p>
+            <a href="https://github.com/NolanHoarau/EVE-NG" target="_blank" class="github-btn">
+            <img src="images/github.png" alt="GitHub" style="width:24px;vertical-align:middle;"> Voir sur GitHub
+            </a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-premier_portfolio">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="images/Page-web.png" alt="Premier portfolio" class="modal-projet-img">
+            <h3>Création de mon premier portfolio</h3>
+            <p>
+                Voici les compétences acquises : <br><br>
+                Programmer et notamment l'apprentissage critique<br>
+                Lire, exécuter, corriger et modifier un programme.
+            </p>
+            <a href="https://github.com/NolanHoarau/Page-web" target="_blank" class="github-btn">
+            <img src="images/github.png" alt="GitHub" style="width:24px;vertical-align:middle;"> Voir sur GitHub
+            </a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-prise">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="images/Schema_electrique.png" alt="PRISE" class="modal-projet-img">
+            <h3>Création d'une Prise connectée</h3>
+            <p>
+                Voici les compétences acquises : <br><br>
+		Déployer et caractériser des systèmes de transmissions complexes <br>
+		Mettre en place une connexion multi-site via un réseau opérateur <br>
+		Déployer des réseaux d'accès des opérateurs <br>
+		Capacité à questionner un cahier des charges RT
+            </p>
+            <a href="https://github.com/NolanHoarau/R-2.01" target="_blank" class="github-btn">
+            <img src="images/github.png" alt="GitHub" style="width:24px;vertical-align:middle;"> Voir sur GitHub
+            </a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-oinion">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="images/Onion.png" alt="OINION" class="modal-projet-img">
+            <h3>Systeme de messagerie avec routage en oignon</h3>
+            <p>
+                Voici les compétences acquises : <br><br>
+                Automatiser l'administration système avec des scripts <br>
+                Développer une application à partir d'un cahier des charges donné, pour le Web ou les périphériques mobiles <br>
+                Utiliser un protocole réseau pour programmer une application client/serveur <br>
+                Installer, administrer un système de gestion de données <br>
+                Accéder à un ensemble de données depuis une application et/ou un site web <br>
+                en étant à l'écoute des besoins du client <br>
+                en documentant le travail réalisé <br>
+                en utilisant les outils numériques à bon escient <br>
+                en choisissant les outils de développement adaptés <br>
+                en intégrant les problématiques de sécurité
+            </p>
+            <a href="https://github.com/NolanHoarau/SAE_3.02" target="_blank" class="github-btn">
+            <img src="images/github.png" alt="GitHub" style="width:24px;vertical-align:middle;"> Voir sur GitHub
+            </a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <section id="contact" class="reveal">
+    <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-block wide">
+        <div class="contact-header wide">
+            <img src="images/Nolan_HOARAU.jpg" alt="Photo de profil" class="contact-avatar wide">
+            <div>
+            <div class="contact-name">Nolan HOARAU</div>
+            <div class="contact-role">Étudiant Réseaux et Télécoms</div>
+            </div>
+        </div>
+        <div class="contact-links wide">
+            <a href="mailto:nolanhoarau21@gmail.com" class="contact-link wide">
+            <span class="contact-link-label">Mail</span>
+            <span class="contact-link-value">nolanhoarau90@gmail.com</span>
+            </a>
+            <a href="https://github.com/NolanHoarau" target="_blank" class="contact-link wide">
+            <span class="contact-link-label">GitHub</span>
+            <span class="contact-link-value">github.com/NolanHoarau</span>
+            </a>
+            <a href="https://www.linkedin.com/in/nolan-hoarau/" target="_blank" class="contact-link wide">
+            <span class="contact-link-label">LinkedIn</span>
+            <span class="contact-link-value">linkedin.com/in/nolan-hoarau</span>
+            </a>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Nolan HOARAU</p>
+            <p>dernière mise à jour en 2026</p>
+        </div>
+    </footer>
+</body>
+</html>
